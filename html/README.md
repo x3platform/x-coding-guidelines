@@ -91,7 +91,7 @@ HTML 4.01 中有 3 种 DTD（文档类型定义）声明可以选择:
 <input onMouseOve="message();" >
 ```  
 需要修改为
-``` html
+```html
 <input onmouseover="message();" >
 ````
 
