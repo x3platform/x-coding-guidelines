@@ -1,4 +1,4 @@
-# SQL Server 10.0 编码规范指引
+# SQL Server 编码规范指引
 
 ## 1. 指引制定原则
 
@@ -30,16 +30,15 @@
 资产管理数据库的命名为`ZCGL`。
 
 ### 2.2 数据库文件及目录
-数据库主数据文件命名：DatabaseName.mdf，文件组名称：PRIMARY
-数据库事务日志文件命名：DatabaseName_log.ldf
-数据库文件组命名：主文件组PRIMARY，次文件组DatabaseName_FileGroup
-其中：DatabaseName为数据库实际名称
+数据库主数据文件命名：`{database_name}.mdf`，文件组名称：PRIMARY
+数据库事务日志文件命名：`{database_name_log}.ldf`
+数据库文件组命名：主文件组PRIMARY，次文件组`{database_name_filegroup}`
+其中：`{database_name}`为数据库实际名称
 
 ### 2.3 数据表命名
- 
 
-| tb  | _   | ×	 | ×  | ×  | × | ×	×	×	×	×	×	×	×	×	 |  
-| --- | --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |
+| tb  | _   | ×	 | ×  | ×  | ×  | ×  | ×  | ×  | ×  | ×  | × |  
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |
 
 _ 命名规则：tb(数据对象类别标识) ＋数据描述 ＋ 表类型(非必要) _
 示例：tb_Account              帐号信息表
